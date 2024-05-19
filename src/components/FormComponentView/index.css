@@ -1,0 +1,208 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    max-width: 1024px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .data-container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+  }
+  .data{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+  }
+  .data>select, .data>div>select, .data1>select, .phone>div>div>select{
+    width: 100%;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+    color: gray;
+  }
+  .data>div>button{
+    background: none;
+    border: 1px solid gray;
+    width: 45px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform .3s ease;
+  }
+  
+  .data>div{
+    display: flex;
+    gap:10px;
+  }
+  .patient-data{
+    display: flex;
+    gap: 10px;
+  }
+  .patient-data>section{
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .patient-name{
+    display: flex;
+    gap: 20px;
+  }
+  .patient-name>div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .dob{
+    display: flex;
+    gap: 15px;
+  }
+  .gender{
+    display: flex;
+    gap: 10px;
+  }
+  .address{
+    display: flex;
+    gap: 15px;
+  }
+  .address>input, .patient-name>div>input, .city-state-zipcode>div>input, .phone>div>div>input, .data1>input{
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .address>input{
+    width: 75%;
+  }
+  .city-state-zipcode{
+    display: flex;
+    gap: 20px;
+  }
+  .city-state-zipcode>div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .phone>div{
+    display: flex;
+    gap: 5px;
+  }
+  .phone>div>div{
+    display: flex;
+    gap: 5px;
+  }
+  .phone>div>div>select{
+    width: 35%;
+  }
+  .data1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+  }
+  .save-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .btn{
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 7px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform .3s ease;
+  }
+  .btn:hover, .data>div>button:hover{
+    background:black;
+    color: white;
+    border: none;
+    transform: scale(0.8);
+  }
+  
+  
+
+  input:hover, select:hover, button:hover{
+    cursor: pointer;
+  }
+
+  span{
+    color: red;
+  }
+  /* label{
+    color: gray;
+  } */
+  @media screen and (max-width : 790px) {
+    .App{
+      width: 90vw;
+    }
+    .patient-data{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .patient-data>section{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .patient-name{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .patient-name>div{
+      display: flex;
+      gap: 10px;
+    }
+    .phone{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .phone>div{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .city-state-zipcode{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .data1{
+      display: flex;
+      flex-direction: column;
+    }
+  }

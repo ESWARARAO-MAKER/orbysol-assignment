@@ -1,0 +1,85 @@
+.view{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search{
+    position: relative;
+    width: 80%;
+}
+.search>input{
+    height: 45px;
+    width: 40%;
+    padding: 20px 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+}
+.search-icon{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+.ViewPage{
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    color: white;
+    margin: 50px auto;
+    width: 90%;
+    max-height: 70vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #1e1e30;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.table{
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    color: white;
+    margin: 50px auto;
+    width: 90%;
+    max-height: 70vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #1e1e30;
+    border: 1px solid #475569;
+    border-radius: 10px;
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th{
+    min-width: 150px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+
+
+
+.tr1{
+    color: #ff073a;
+}
+.tr2{
+    color: #007bff;
+}
+.tr3{
+    color: #28a745;
+}
+.tr4{
+    color: #6c757d;
+}
+
+@media screen and (max-width : 790px) {
+    .search>input{
+        width: 60%;
+    }
+}
