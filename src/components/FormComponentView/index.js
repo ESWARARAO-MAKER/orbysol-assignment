@@ -109,7 +109,7 @@ function FormComponentView() {
     e.preventDefault();
     if (validate()) {
       try {
-        await axios.post('http://localhost:4000/api/data', formData);
+        await axios.post('https://eswar-orbysol-assignment.onrender.com/api/data', formData);
         // window.location.href = '/view';
         navigate("/view")
       } catch (error) {

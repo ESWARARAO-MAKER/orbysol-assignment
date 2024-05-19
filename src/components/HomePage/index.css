@@ -1,0 +1,43 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    padding: 0px;
+    margin: 0px;
+}
+.home-buttons{
+    display: flex;
+    gap: 20px;
+}
+.home-button{
+    border: none;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.home-button:hover{
+    transform: scale(0.8);
+}
+.new-button{
+    background-color: blue;
+    color: white;
+}
+.new-button:hover{
+    border: 1px solid blue;
+    background: transparent;
+    color: blue;
+}
+.details-button{
+    background-color: green;
+    color: white;
+}
+.details-button:hover{
+    border: 1px solid green;
+    color: green;
+    background: transparent;
+}
