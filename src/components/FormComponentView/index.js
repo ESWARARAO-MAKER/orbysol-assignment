@@ -8,7 +8,7 @@ function SelectField({ label, required, options, name, value, onChange, onBlur, 
   return (
     <div className="data">
       <label>{label}{required && <span>*</span>}</label>
-      <select name={name} required={required} value={value} onChange={onChange} onBlur={onBlur}>
+      <select name={name} required={required} value={value} onChange={onChange} onBlur={onBlur} className='select'>
         <option value="">Select...</option>
         {options.map(option => (
           <option key={option} value={option}>{option}</option>
@@ -323,6 +323,7 @@ function FormComponentView() {
           {/* <Link to ="/view" ><button className="btn" type="submit" >Save</button></Link> */}
 
           <button className="btn" type="submit" >Save</button>
+          <button className="btn" onClick={() => navigate("/")} >Back</button>
         </div>
       </form>
     </div>

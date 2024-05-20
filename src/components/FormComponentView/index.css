@@ -26,10 +26,10 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 50%;
+    width: 100%;
   }
   .data>select, .data>div>select, .data1>select, .phone>div>div>select{
-    width: 100%;
+    width: 50%;
     height: 35px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -53,6 +53,7 @@
   .patient-data{
     display: flex;
     gap: 10px;
+    width: 100%;
   }
   .patient-data>section{
     border: 1px solid gray;
@@ -123,7 +124,6 @@
   }
   .data1{
     display: flex;
-    align-items: center;
     gap: 10px;
     width: 50%;
   }
@@ -131,6 +131,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
   }
   .btn{
     background-color: transparent;
@@ -165,6 +166,12 @@
   @media screen and (max-width : 790px) {
     .App{
       width: 90vw;
+    }
+    .data>select{
+      width: 100%;
+    }
+    .data>div>select{
+      width: 100%;
     }
     .patient-data{
       display: flex;
@@ -204,5 +211,9 @@
     .data1{
       display: flex;
       flex-direction: column;
+      width: 100%;
+    }
+    .data1>input{
+      width: 100%;
     }
   }

@@ -3,8 +3,10 @@ import axios from 'axios';
 import './index.css';
 import { CiSearch } from "react-icons/ci";
 import { Loading } from '../Loading';
+import { useNavigate } from 'react-router-dom';
 
 function ViewPage() {
+  const navigate = useNavigate()
   const [input, setInput] = useState("");
   const [enrollments, setEnrollments] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -100,6 +102,7 @@ function ViewPage() {
           )}
         </table>
       </div>
+      <button className='btn' onClick={() => navigate("/")}>Back</button>
     </div>
   );
 }
