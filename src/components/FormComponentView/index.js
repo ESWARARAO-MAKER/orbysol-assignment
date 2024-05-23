@@ -322,8 +322,8 @@ function FormComponentView() {
         
           {/* <Link to ="/view" ><button className="btn" type="submit" >Save</button></Link> */}
 
-          <button className="btn" type="submit" >Save</button>
-          <button className="btn" onClick={() => navigate("/")} >Back</button>
+          <button className="btn save" type="submit" >Save</button>
+          <button className="btn back" onClick={() => navigate("/")} >Back</button>
         </div>
       </form>
     </div>

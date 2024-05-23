@@ -31,7 +31,7 @@
     max-height: 70vh;
     overflow-y: auto;
     scrollbar-width: none;
-    background-color: #1e1e30;
+    background-color: #fff;
     border: 1px solid #475569;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -60,12 +60,14 @@ td, th{
     box-sizing: border-box;
     padding: 20px 10px;
     text-align: center;
+    border-bottom: 1px solid black;
+    color: black;
+}
+tr:nth-child(even){
+    background-color: lightgray;
 }
 
-
-
-
-.tr1{
+/* .tr1{
     color: #ff073a;
 }
 .tr2{
@@ -76,7 +78,9 @@ td, th{
 }
 .tr4{
     color: #6c757d;
-}
+} */
+
+
 
 @media screen and (max-width : 790px) {
     .search>input{
